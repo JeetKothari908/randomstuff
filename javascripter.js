@@ -13,3 +13,4 @@ function Car(make, model, year) {
 }
 
 const car1 = new Car('Eagle', 'Talon TSi', 1993);
+myFunction(1,43)

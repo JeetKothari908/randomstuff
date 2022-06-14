@@ -1,17 +1,59 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
+
 <head>
-<script>
-function myFunction() {
-  document.getElementById("demo").innerHTML = "Paragraph changed.";
-}
-</script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Increment count when button is clicked</title>
 </head>
-<body>
-<h2>Demo JavaScript in Head</h2>
 
-<p id="demo">A Paragraph</p>
-<button type="button" onclick="myFunction()">Try it</button>
+<body style="text-align: center;">
+	<h1 style="color: green;">
+		GeeksforGeeks
+    <h1>The input name attribute</h1>
+    <h1>Your full name is <span id="thingerer"> ____ </span>, correct? </h1>
+<form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+  <script type="text/javascript">
+    var fnamathan = document.getElementById("fname");
+    var lnameathan = document.getElementById("lname");
+    let fullhouse = fnamathan + lnameathan;
+    
+  </script>
+</form>
 
+	</h1>
+
+	<h4>
+		How to count the number of
+		times a button is clicked?
+	</h4>
+
+	<button id="btn">Click Here!</button>
+  <button id = "btn2"> Don't Click here </button>
+
+	<p>
+		Button Clicked <span
+		id="display">0</span> Times
+	</p>
+
+	<script type="text/javascript">
+		var count = 0;
+		var btn = document.getElementById("btn");
+		var disp = document.getElementById("display");
+
+		btn.onclick = function () {
+			count++;
+			disp.innerHTML = count;
+    }
+    btn2.onclick = function () {
+      count ++;
+      disp.innerHTML = count;
+    }
+	</script>
 </body>
+
 </html>
